@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="font_white">#fff</color>
     <color name="blue_toolbar">#005cb2</color>
+    <color name="light_orange_chip">#ffad42</color>
 </resources>

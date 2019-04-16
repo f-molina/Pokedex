@@ -5,49 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/card_view"
-    android:layout_margin="5dp"
-    card_view:cardCornerRadius="40dp"
-    card_view:cardElevation="10dp"
-    card_view:contentPadding="4dp">
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="10dp">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
- >
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
 
         <ImageView
-            android:src="@drawable/ic_launcher_background"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/pokemon_image"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp" />
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/pokemon_image"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/pokemon_id"
-            android:layout_marginTop="30dp"
-            android:layout_toRightOf="@+id/pokemon_image"
-            android:layout_alignParentTop="true"
-            android:text="#01"
-            android:textSize="20sp"
-            android:layout_marginEnd="45dp"
-            android:layout_marginRight="45dp"
-            android:textColor="@color/font_white"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pokemon_name"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/pokemon_image"
+                android:layout_alignParentTop="true"
+                android:text="Pikachu"
+                android:textSize="25sp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/font_white"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:id="@+id/pokemon_name"
-            android:layout_toRightOf="@+id/pokemon_id"
-            android:text="Pikachu"
-            android:textSize="20sp"
-            android:textColor="@color/font_white"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24.5dp"
+                android:id="@+id/pokemon_id"
+                android:layout_toRightOf="@+id/pokemon_name"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:text="#01"
+                android:textSize="15sp"
+                android:textColor="@color/font_white"/>
+
+        <com.google.android.material.chip.Chip
+                android:id="@+id/chip_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:chipBackgroundColor="@color/light_orange_chip"
+                android:layout_marginTop="60dp"
+                android:layout_toEndOf="@id/pokemon_image"
+                android:layout_toRightOf="@id/pokemon_image"
+                android:text="pupu"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="-32dp"/>
+
+        <com.google.android.material.chip.Chip
+                android:id="@+id/chip_test2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_toEndOf="@id/chip_test"
+                android:layout_toRightOf="@id/chip_test"
+                card_view:chipBackgroundColor="@color/light_orange_chip"
+                android:text="pupu"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginBottom="-32dp"/>
 
     </RelativeLayout>
 
