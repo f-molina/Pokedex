@@ -57,5 +57,4 @@ class PokemonDetail : Fragment() {
         pokeName.text = pokemon!!.name
 
     }
-
 }
